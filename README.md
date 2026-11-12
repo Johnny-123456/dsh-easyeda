@@ -158,6 +158,18 @@ eda_export     {"kind":"gerber","dir":"D:/out"}          # 6. 出生产资料
 26. **列表类字段一律带截断标记**：网表 `members` 默认只列 12 个，因此每个网络带 `pinCount` / `memberCount`（真实总数）/ `membersTruncated`，顶层带 `netTotal` / `netsTruncated`；组件列表的 `componentTotal`、异常项的 `truncated` 同理。没有标记的截断会让人误判连接数。
 27. **GUI 打开的会话 `session.path` 是 `null`**，且 `sys_FileSystem.getProjectsPaths()` 在这种会话里常返回空数组、`getEdaPath()` 返回空串。真正可用的是 `dmt_Project.getCurrentProjectInfo()`：`name` 形如 `/工程名`，`teamUuid` 在个人工程里就是工程根目录（如 `D:\...\projects`），拼出的路径再用 `existsPathInFileSystem` 校验即可。
 
+## 安装
+
+从仓库安装：
+
+```
+plugin_manager  install_bundle  target: "github:Johnny-123456/dsh-easyeda"
+```
+
+本地开发时用目录：`install_bundle` 的 target 指向本目录即可（profile 里会建一个 junction，改代码不用重装）。
+
+要求：嘉立创EDA专业版桌面客户端 **v4.1.70+**（实测 4.1.99）。CLI 内置于客户端，无需单独安装；插件会自动在常见安装路径里找 `lceda-pro.exe`，也可在插件 config 里用 `executable` 指定。
+
 ## 开发与安装
 
 插件是纯 Host 插件（无构建、无依赖），目录即工作区里的 `dsh-easyeda/`：

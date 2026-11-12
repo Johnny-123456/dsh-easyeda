@@ -4,6 +4,20 @@
   "private": true,
   "type": "module",
   "description": "Drive the EasyEDA Pro / JLCEDA V4 desktop CLI from DSH: analyze schematics, locate components, draw and check PCBs.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnny-123456/dsh-easyeda.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "easyeda",
+    "lceda",
+    "eda",
+    "pcb",
+    "schematic"
+  ],
   "exports": {
     ".": "./index.js",
     "./locale/*.json": "./locale/*.json",
@@ -15,7 +29,8 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {
