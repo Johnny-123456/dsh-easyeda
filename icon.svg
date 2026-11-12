@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="EasyEDA Pro CLI">
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#0B6E4F"/>
+  <g fill="none" stroke="#8CE99A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 22h10v-6h8v6h10"/>
+    <path d="M18 42h10v6h8v-6h10"/>
+    <path d="M23 22v8h6v8h6v-8h6v-8"/>
+  </g>
+  <g fill="#8CE99A">
+    <circle cx="18" cy="22" r="2.6"/>
+    <circle cx="46" cy="22" r="2.6"/>
+    <circle cx="18" cy="42" r="2.6"/>
+    <circle cx="46" cy="42" r="2.6"/>
+    <circle cx="32" cy="38" r="3"/>
+  </g>
+</svg>

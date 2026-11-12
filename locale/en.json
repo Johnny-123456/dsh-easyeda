@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "EasyEDA Pro CLI",
+    "description": "Analyze schematics, locate components, and draw PCBs in the EasyEDA Pro (JLCEDA) V4 desktop client."
+  }
+}
